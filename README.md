@@ -42,7 +42,7 @@ Gearman = require('gearman').Gearman
 
 client = new Gearman("localhost", 4730 , {timeout: 3000}) # timeout in milliseconds. 
 
-#handle timeout 
+# handle timeout 
 client.on 'timeout', () ->
 	console.log 'Timeout occured'
 	client.close()
